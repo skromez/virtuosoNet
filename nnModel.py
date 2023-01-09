@@ -56,7 +56,7 @@ class GatedGraph(nn.Module):
 
         self.sigmoid = torch.nn.Sigmoid()
 
-        self.tanh = torch.nn.Tanh()
+        self.tanh = torch.tanh
 
     def forward(self, input, edge_matrix, iteration=10):
         for i in range(iteration):
@@ -130,7 +130,7 @@ class ContextAttention(nn.Module):
 
     def forward(self, x):
         attention = self.attention_net(x)
-        attention_tanh = F.tanh(attention)
+        attention_tanh = torch.tanh(attention)
         if self.head_size != 1:
             attention_split = torch.cat(attention_tanh.split(split_size=self.head_size, dim=2), dim=0)
             similarity = torch.bmm(attention_split, self.context_vector)
@@ -298,7 +298,7 @@ class ISGN(nn.Module):
 
         self.softmax = nn.Softmax(dim=0)
         self.sigmoid = nn.Sigmoid()
-        self.tanh = nn.Tanh()
+        self.tanh = torch.tanh
 
     def forward(self, x, y, edges, note_locations, start_index, initial_z=False, return_z=False):
         beat_numbers = [x.beat for x in note_locations]
