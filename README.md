@@ -1,3 +1,12 @@
+# How to run
+    0) Init submodules ```git submodule update --init --recursive```
+    1) Download [miniconda3](https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh)
+    2) Create conda environmet ```conda create -n ai-piano python=3.8```
+    3) Switch to new environment ```conda activate ai-piano```
+    4) Install conda torch packages ```conda install pytorch torchvision torchaudio -c pytorch```
+    5) Install all needed packages ```pip install pretty_midi matplotlib scipy```
+    6) Refer to [how to generate](#howtogenerate) MIDI performance.
+
 # VirtuosoNet
 
 Our research project is developing a system for generating expressive piano perfomrance, or simply 'AI Pianist'. The system reads a given music score in MusicX
@@ -14,7 +23,7 @@ contact: jdasam@kaist.ac.kr
 
 
 
-## How to generate performance MIDI from musicXML
+## <a name="howtogenerate"></a> How to generate performance MIDI from musicXML
 
 0. Put your musicXML in a folder. 
 The filename shouldbe 'musicxml_cleaned.musicxml' or 'xml.xml' or 'musicxml.musicxml'
