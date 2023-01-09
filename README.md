@@ -1,11 +1,14 @@
 # How to run
-    0) Init submodules ```git submodule update --init --recursive```
-    1) Download [miniconda3](https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh)
-    2) Create conda environmet ```conda create -n ai-piano python=3.8```
-    3) Switch to new environment ```conda activate ai-piano```
-    4) Install conda torch packages ```conda install pytorch torchvision torchaudio -c pytorch```
-    5) Install all needed packages ```pip install pretty_midi matplotlib scipy```
-    6) Refer to [how to generate](#howtogenerate) MIDI performance.
+
+Init submodules ```git submodule update --init --recursive```
+
+- Download [miniconda3](https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh)
+- Install miniconda3 ```sh Miniconda3-latest-MacOSX-arm64```
+- Create conda environmet ```conda create -n ai-piano python=3.8```
+- Switch to new environment ```conda activate ai-piano```
+- Install conda torch packages ```conda install pytorch torchvision torchaudio -c pytorch```
+- Install all needed python packages ```pip install pretty_midi matplotlib scipy```
+- Refer to [how to generate](#howtogenerate) MIDI performance.
 
 # VirtuosoNet
 
