@@ -3,6 +3,7 @@
 - Init submodules ```git submodule update --init --recursive```
 - Download [miniconda3](https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh)
 - Install miniconda3 ```sh Miniconda3-latest-MacOSX-arm64```
+- Init conda ```source ~/.zshrc``` if needed or restart terminal.
 - Create conda environmet ```conda create -n ai-piano python=3.8```
 - Switch to new environment ```conda activate ai-piano```
 - Install conda torch packages ```conda install pytorch torchvision torchaudio -c pytorch```
