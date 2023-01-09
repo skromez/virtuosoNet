@@ -8,7 +8,8 @@ Init submodules ```git submodule update --init --recursive```
 - Switch to new environment ```conda activate ai-piano```
 - Install conda torch packages ```conda install pytorch torchvision torchaudio -c pytorch```
 - Install all needed python packages ```pip install pretty_midi matplotlib scipy```
-- Refer to [how to generate](#howtogenerate) MIDI performance.
+- Generate Fur Elise performance ```python3 model_run.py -mode=test -code=isgn -path=./test_pieces/fur_elise/ -comp=Beethoven -tempo=30``` result will be in the ```test_result``` folder
+- Refer to [how to generate](#howtogenerate) MIDI performance for more info.
 
 # VirtuosoNet
 
