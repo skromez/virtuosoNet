@@ -1,7 +1,6 @@
 # How to run
 
-Init submodules ```git submodule update --init --recursive```
-
+- Init submodules ```git submodule update --init --recursive```
 - Download [miniconda3](https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh)
 - Install miniconda3 ```sh Miniconda3-latest-MacOSX-arm64```
 - Create conda environmet ```conda create -n ai-piano python=3.8```
